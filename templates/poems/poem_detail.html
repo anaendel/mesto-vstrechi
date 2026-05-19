@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="poem-page">
+
+    <div class="poem-header">
+        <h2 class="poem-author">
+            {{ poem.author.name }}
+        </h2>
+
+
+    </div>
+
+    <h3 class="poem-title">{{ poem.title }}</h3>
+
+    <div class="poem-text">
+        {{ poem_body|linebreaks }}
+    </div>
+
+    {% if poem.year %}
+        <div class="poem-year">
+            {{ poem.year }}
+        </div>
+    {% endif %}
+
+</div>
+
+{% endblock %}

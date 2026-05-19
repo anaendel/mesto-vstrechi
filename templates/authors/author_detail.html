@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{ author.name }}{% endblock %}
+{% block content %}
+<h1 class="author-name">{{ author.name }}</h1>
+
+<div class="author-top">
+    <div class="author-bio">
+       <p>{{ author.biography }}</p>
+    </div>
+    <div class="author-photo">
+        {% if author.photo %}
+            <img class="author-detail-photo" src="{{ author.photo }}" alt="{{ author.name }}">
+        {% else %}
+            <img class="author-detail-photo" src="{% static 'images/logo.png' %}" alt="{{ author.name }}">
+        {% endif %}
+    </div>
+</div>
+<div class="author-poems">
+    {% for item in poems_with_preview %}
+        <div class="poem-card">
+            <h3>
+                <a href="{% url 'poems:poem_detail' item.poem.slug %}">
+                    {{ item.poem.title }}
+                </a>
+            </h3>
+            <p class="poem-preview">{{ item.preview }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

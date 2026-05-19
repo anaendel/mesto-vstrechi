@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}авторы{% endblock %}
+{% block content %}
+
+<div class="authors-page">
+
+    <!-- АЛФАВИТ -->
+    <div class="alphabet">
+        {% for letter in alphabet %}
+            <a href="?letter={{ letter }}"
+               class="{% if selected_letter == letter %}active-letter{% endif %}">
+                {{ letter }}
+            </a>
+        {% endfor %}
+    </div>
+
+    <!-- СПИСОК АВТОРОВ -->
+    <div class="authors-grid">
+        {% for author in authors %}
+            <a class="author-item" href="{% url 'authors:author_detail' author.slug %}">
+                
+                <span class="author-photo-wrap">
+                    {% if author.photo %}
+                        <img src="{{ author.photo }}" alt="{{ author.name }}">
+                    {% else %}
+                        <img src="{% static 'images/logo.png' %}" alt="{{ author.name }}">
+                    {% endif %}
+                </span>
+
+                <span>{{ author.name }}</span>
+            </a>
+        {% empty %}
+            <p class="no-authors">Авторов на эту букву пока нет.</p>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="feedback-section">
+    <h1>Свяжитесь с нами</h1>
+
+    <form method="post" class="feedback-form">
+        {% csrf_token %}
+
+        <div class="feedback-row">
+            {{ form.name }}
+            {{ form.email }}
+            {{ form.subject }}
+        </div>
+
+        {{ form.message }}
+
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+{% endblock %}

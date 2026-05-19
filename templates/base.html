@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}место встречи{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/logo1.png' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% comment %} <div class="intro" id="intro">
+        <div class="intro-title">МЕСТО ВСТРЕЧИ</div>
+        <div class="intro-circle"></div>
+    </div> {% endcomment %}
+    <header class="header">
+    <a class="logo" href="{% url 'pages:index' %}">
+        <img src="{% static 'images/logo.png' %}" alt="Место встречи">
+    </a>
+
+    <nav class="nav">
+        <a href="{% url 'pages:index' %}"
+            class="{% if request.resolver_match.url_name == 'index' %}active{% endif %}">
+            ГЛАВНАЯ
+        </a>
+
+        <a href="{% url 'poems:poem_list' %}"
+        class="{% if request.path == '/poems/' %}active{% endif %}">
+        СТИХИ
+        </a>
+
+        <a href="{% url 'authors:author_list' %}"
+        class="{% if request.path == '/authors/' %}active{% endif %}">
+        АВТОРЫ
+        </a>
+
+        <a href="{% url 'pages:materials' %}"
+        class="{% if request.path == '/materials/' %}active{% endif %}">
+        МАТЕРИАЛЫ
+        </a>
+
+    </nav>
+    </header>
+
+    <main class='page'>
+        {% block content %}{% endblock %}
+    </main>
+    {% comment %} <script>
+        if (sessionStorage.getItem('introShown')) {
+            document.getElementById('intro').style.display = 'none';
+        } else {
+            sessionStorage.setItem('introShown', 'true');
+        }
+    </script> {% endcomment %}
+    <footer class="footer">
+        <a href="{% url 'pages:index' %}" class="footer-logo">МЕСТО ВСТРЕЧИ</a>
+        <a href="https://t.me/vstrecha_vstrech" target="_blank" class="footer-tg">TELEGRAM</a>
+    </footer>
+</body>    
+</body>
+</html>

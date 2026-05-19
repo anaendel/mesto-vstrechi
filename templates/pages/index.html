@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<main class="main">
+
+
+    <div class="hero-text">
+        <h1>Место встречи</h1>
+    <div class="quote">
+        <p>
+            И за то, что нас родина выгнала,<br>
+            Мы по свету ее разнесли.
+        </p>
+        <p class="author">А. Ачаир</p>
+    </div>
+    <div class="text">
+        <p>
+            Много поколений авторов были вынуждены покинуть Россию.
+            Исторические события разносили их по миру — гражданская война,
+            железный занавес, путинизм.
+        </p>
+        <p>
+            Они уезжают и пропадают. Они умирают и забываются.
+            А их стихи — живут. В архивах, личных дневниках,
+            старых журналах.
+        </p>
+        <p>
+            Между нашими героями нет связи, они существуют по-отдельности — 
+            каждый в своем времени и пространстве.
+        </p>
+        <p>
+            Здесь — их место встречи.
+        </p>
+    </div>
+    <div class="flourish-embed flourish-map" data-src="visualisation/28942906"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28942906/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+    <section class="feedback-section">
+        <h1>Свяжитесь с нами</h1>
+
+        <form method="post" action="{% url 'feedback:feedback' %}" class="feedback-form">
+            {% csrf_token %}
+
+            <div class="feedback-row">
+                {{ form.name }}
+                {{ form.email }}
+                {{ form.subject }}
+            </div>
+
+            {{ form.message }}
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+</main>
+
+{% endblock %}

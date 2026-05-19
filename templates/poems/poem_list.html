@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}стихи{% endblock %}
+{% block content %}
+<main class="poem-page">
+
+  {% if not poem %}
+    <a href="?random=1" class="meet-button">ВСТРЕЧА</a>
+  {% else %}
+    <section class="random-poem">
+
+      <h2>
+        <a href="{% url 'authors:author_detail' poem.author.slug %}" class="poem-author">
+          {{ poem.author }}
+        </a>
+      </h2>
+
+      <h3 class="poem-title">{{ poem.title }}</h3>
+
+      <div class="poem-text">
+        {{ poem_body|linebreaksbr }}
+      </div>
+
+      <a href="?random=1" class="meet-button meet-button--small">
+          ЕЩЁ
+      </a>
+
+    </section>
+  {% endif %}
+
+</main>
+{% endblock %}
