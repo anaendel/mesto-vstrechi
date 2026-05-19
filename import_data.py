@@ -42,7 +42,7 @@ df = pd.read_excel(file_path)
 
 df['Автор'] = df['Автор'].ffill()
 
-#Poem.objects.all().delete()
+Poem.objects.all().delete()
 
 for author_name, group in df.groupby('Автор'):
     author_name = clean(author_name)
@@ -78,6 +78,12 @@ for author_name, group in df.groupby('Автор'):
 
         if not poem_text:
             continue
+        year_value = row.get('Год')
+
+        if pd.isna(year_value) or str(year_value).strip() == '':
+            year = None
+        else:
+            year = int(float(year_value))
 
         title = poem_text.split('\n')[0][:100]
         base_slug = slugify(title)
@@ -91,11 +97,10 @@ for author_name, group in df.groupby('Автор'):
         Poem.objects.update_or_create(
             author=author,
             title=title,
-            defaults={
-                'slug': poem_slug,
-                'text': poem_text,
-                'is_published': True,
-            }
+            slug=poem_slug,
+            text=poem_text,
+            year=year,
+            is_published=True,
         )
 
 # current_author = None
