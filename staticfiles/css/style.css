@@ -898,3 +898,249 @@ body {
         font-size: 22px !important;
     }
 }
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        font-size: 16px;
+    }
+
+    .page {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 16px;
+        gap: 20px;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    .logo img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        padding-top: 0;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+        gap: 30px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .site-logo-img {
+        width: 130px !important;
+        height: auto !important;
+        transform: none !important;
+        margin: 0 auto;
+    }
+
+    .hero-text h1 {
+        font-size: 34px !important;
+        line-height: 1.15;
+        white-space: normal;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .hero-poem {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    h1,
+    .page h1 {
+        font-size: 28px !important;
+        line-height: 1.25;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .authors-page {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .alphabet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+
+    .authors-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 0;
+    }
+
+    .author-item {
+        font-size: 16px;
+    }
+
+    .author-top {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .author-name {
+        font-size: 34px !important;
+        line-height: 1.2;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .author-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .author-info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .author-bio {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .author-photo {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .author-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .author-poems {
+        margin-top: 40px;
+    }
+
+    .poem-page {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        min-height: auto;
+    }
+
+    .poem-header {
+        margin-bottom: 30px;
+    }
+
+    .poem-author {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .poem-title {
+        font-size: 22px !important;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .poem-text {
+        max-width: 100%;
+        font-size: 17px;
+        line-height: 1.8;
+        white-space: pre-line;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+
+    .random-poem {
+        width: 100%;
+        max-width: 100%;
+        margin: 30px auto 0;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .poem-stars {
+        letter-spacing: 6px;
+    }
+
+    .quote {
+        width: 100%;
+        margin: 0 0 30px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .quote .author {
+        text-align: left;
+    }
+
+    .text,
+    .text-page {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .meet-button,
+    .meet-button--small {
+        width: 100%;
+        max-width: 280px;
+        padding: 18px 0;
+        margin: 60px auto 0;
+        font-size: 18px;
+    }
+
+    .feedback-section {
+        max-width: 100%;
+        margin: 60px 20px;
+    }
+
+    .feedback-row {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 24px 20px;
+    }
+}
