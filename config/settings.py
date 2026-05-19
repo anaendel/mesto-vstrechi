@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-14q1u8mih89+-8^6p9rhx&&^ukcr61hqjz76^s#+tzy@eh^80&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['*']pip install whitenoise
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
