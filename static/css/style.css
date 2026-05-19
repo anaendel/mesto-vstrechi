@@ -898,3 +898,728 @@ body {
         font-size: 22px !important;
     }
 }
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        font-size: 16px;
+    }
+
+    .page {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 16px;
+        gap: 20px;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    .logo img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        padding-top: 0;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+        gap: 30px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .site-logo-img {
+        width: 130px !important;
+        height: auto !important;
+        transform: none !important;
+        margin: 0 auto;
+    }
+
+    .hero-text h1 {
+        font-size: 34px !important;
+        line-height: 1.15;
+        white-space: normal;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .hero-poem {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    h1,
+    .page h1 {
+        font-size: 28px !important;
+        line-height: 1.25;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .authors-page {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .alphabet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+
+    .authors-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 0;
+    }
+
+    .author-item {
+        font-size: 16px;
+    }
+
+    .author-top {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .author-name {
+        font-size: 34px !important;
+        line-height: 1.2;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .author-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .author-info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .author-bio {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .author-photo {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .author-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .author-poems {
+        margin-top: 40px;
+    }
+
+    .poem-page {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        min-height: auto;
+    }
+
+    .poem-header {
+        margin-bottom: 30px;
+    }
+
+    .poem-author {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .poem-title {
+        font-size: 22px !important;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .poem-text {
+        max-width: 100%;
+        font-size: 17px;
+        line-height: 1.8;
+        white-space: pre-line;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+
+    .random-poem {
+        width: 100%;
+        max-width: 100%;
+        margin: 30px auto 0;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .poem-stars {
+        letter-spacing: 6px;
+    }
+
+    .quote {
+        width: 100%;
+        margin: 0 0 30px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .quote .author {
+        text-align: left;
+    }
+
+    .text,
+    .text-page {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .meet-button,
+    .meet-button--small {
+        width: 100%;
+        max-width: 280px;
+        padding: 18px 0;
+        margin: 60px auto 0;
+        font-size: 18px;
+    }
+
+    .feedback-section {
+        max-width: 100%;
+        margin: 60px 20px;
+    }
+
+    .feedback-row {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 24px 20px;
+    }
+}
+@media (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 26px 16px 10px;
+        gap: 18px;
+    }
+
+    .logo {
+        position: static;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px 28px;
+        padding-top: 0;
+    }
+
+    .nav a {
+        font-size: 17px;
+        letter-spacing: 1.5px;
+    }
+
+    .page {
+        width: 100%;
+        max-width: 100%;
+        padding: 35px 24px;
+        box-sizing: border-box;
+    }
+
+    .main {
+        width: 100%;
+        max-width: 100%;
+        margin: 25px auto 0;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+
+    h1,
+    .page h1 {
+        font-size: 30px !important;
+        line-height: 1.25;
+        text-align: center;
+        margin-bottom: 32px;
+        letter-spacing: 2px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+        gap: 24px;
+        padding: 40px 24px 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .site-logo-img {
+        width: 110px !important;
+        height: auto !important;
+        transform: none !important;
+        margin: 0 auto;
+    }
+
+    .hero-text h1 {
+        font-size: 38px !important;
+        line-height: 1.15;
+        white-space: normal;
+        text-align: center;
+        margin: 40px 0 45px;
+        letter-spacing: 4px;
+    }
+
+    .hero-poem {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: right;
+        max-width: 100%;
+    }
+
+    .quote {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 35px;
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: right;
+    }
+
+    .quote .author {
+        text-align: right;
+    }
+
+    .text,
+    .text-page {
+        width: 100%;
+        max-width: 100%;
+        font-size: 17px;
+        line-height: 1.75;
+        box-sizing: border-box;
+    }
+
+    .text p {
+        margin-bottom: 22px;
+    }
+
+    iframe,
+    .flourish-embed {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .authors-page {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .alphabet {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 18px 0;
+        margin: 35px 0 50px;
+        font-size: 18px;
+        text-align: center;
+        overflow: visible;
+    }
+
+    .alphabet a {
+        display: block;
+        text-align: center;
+    }
+
+    .authors-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        padding: 0;
+    }
+
+    .author-item {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .author-photo-wrap,
+    .author-item img {
+        width: 82px;
+        height: 82px;
+        min-width: 82px;
+    }
+
+    .author-name {
+        font-size: 34px !important;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .author-top,
+    .author-layout,
+    .author-info {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .author-bio {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .author-photo {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .author-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .poem-page {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 35px 24px;
+        box-sizing: border-box;
+    }
+
+    .random-poem {
+        width: 100%;
+        max-width: 100%;
+        margin: 25px auto 0;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    .poem-title {
+        font-size: 24px !important;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .poem-author {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .poem-text {
+        width: 100%;
+        max-width: 100%;
+        font-size: 17px;
+        line-height: 1.8;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .meet-button,
+    .meet-button--small {
+        width: 100%;
+        max-width: 300px;
+        padding: 22px 0;
+        margin: 80px auto 0;
+        font-size: 24px;
+        box-sizing: border-box;
+    }
+
+    .feedback-section {
+        max-width: 100%;
+        margin: 70px 24px;
+    }
+
+    .feedback-section h1 {
+        font-size: 24px !important;
+        line-height: 1.3;
+    }
+
+    .feedback-row {
+        flex-direction: column;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea,
+    .feedback-form button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 24px;
+        box-sizing: border-box;
+    }
+
+    .footer-logo,
+    .footer-tg {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+@media (max-width: 768px) {
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .header {
+        padding: 24px 16px 20px !important;
+        gap: 18px !important;
+    }
+
+    .logo {
+        position: static !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .logo img {
+        width: 68px !important;
+        height: 68px !important;
+    }
+
+    .nav {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 18px !important;
+        padding-top: 0 !important;
+    }
+
+    .nav a {
+        font-size: 14px !important;
+        letter-spacing: 1px !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+    }
+
+    .page,
+    .main,
+    .authors-page {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 24px 22px !important;
+        margin: 0 auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .hero {
+        width: 100% !important;
+        display: block !important;
+        padding: 45px 22px 20px !important;
+        min-height: auto !important;
+    }
+
+    .site-logo-img {
+        width: 100px !important;
+        height: auto !important;
+        transform: none !important;
+        margin: 0 auto 30px !important;
+    }
+
+    .hero-text h1 {
+        font-size: 36px !important;
+        line-height: 1.15 !important;
+        white-space: normal !important;
+        text-align: center !important;
+        letter-spacing: 3px !important;
+        margin: 35px 0 45px !important;
+    }
+
+    .quote {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 0 35px !important;
+        text-align: right !important;
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+    .text,
+    .text-page {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 17px !important;
+        line-height: 1.75 !important;
+    }
+    .alphabet {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+
+        gap: 28px 38px !important;
+
+        margin: 20px auto 50px !important;
+        padding: 0 20px !important;
+
+        font-size: 18px !important;
+        text-align: center !important;
+        overflow: visible !important;
+    }
+
+    .alphabet a {
+        display: inline-block !important;
+        width: auto !important;
+        text-align: center !important;
+    }
+
+    .authors-grid {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 34px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .author-item {
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 22px !important;
+        font-size: 21px !important;
+        line-height: 1.3 !important;
+    }
+
+    .author-photo-wrap,
+    .author-item img {
+        width: 76px !important;
+        height: 76px !important;
+        min-width: 76px !important;
+    }
+
+    iframe,
+    .flourish-embed,
+    .flourish-credit {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .feedback-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 60px 0 !important;
+        padding: 0 22px !important;
+    }
+
+    .feedback-row {
+        flex-direction: column !important;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea,
+    .feedback-form button {
+        width: 100% !important;
+    }
+
+    .footer {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 20px 22px !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+}
