@@ -36,16 +36,18 @@ h1, h2 {
 /* ===== HEADER & NAV ===== */
 .header {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: space-between;
     position: relative;
-    padding-top: 40px;
+    padding: 20px 40px 10px;
 }
 
 .logo {
-    position: absolute;
+    position: static;
     left: 25px;
-    top: 25px;
+    top: 80px;
+    margin-top: 0;
+    align-self: auto;
 }
 
 .logo img {
@@ -58,7 +60,9 @@ h1, h2 {
 .nav {
     display: flex;
     gap: 180px;
-    padding-top: 40px;
+    padding-top: 0;
+    justify-content: center;
+    flex: 1;
 }
 
 .nav a {
@@ -242,7 +246,7 @@ h1, h2 {
 .authors-page {
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .alphabet {
