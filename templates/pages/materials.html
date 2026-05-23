@@ -3,7 +3,13 @@
 {% block title %}материалы{% endblock %}
 
 {% block content %}
-<h1>Материалы</h1>
-
-
+<div class="materials-page">
+    <div class="materials-list">
+        {% for material in materials %}
+            <div class="material-card">
+                <a href="{{ material.url }}" target="_blank">{{ material.title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}

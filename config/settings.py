@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'poems',
     'pages',
     'feedback',
+    'materials',
 ]
 
 MIDDLEWARE = [
