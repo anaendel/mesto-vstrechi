@@ -2,12 +2,14 @@
 {% load static %}
 {% block title %}{{ author.name }}{% endblock %}
 {% block content %}
-<h1 class="author-name">{{ author.name }}</h1>
 
 <div class="author-top">
-    <div class="author-bio">
-       <p>{{ author.biography }}</p>
-    </div>
+    <div class="author-info">
+        <h1 class="author-name">{{ author.name }}</h1>
+        <div class="author-bio">
+            <p>{{ author.biography }}</p>
+        </div>
+    </div>  
     <div class="author-photo">
         {% if author.photo %}
             <img class="author-detail-photo" src="{{ author.photo }}" alt="{{ author.name }}">
@@ -16,6 +18,7 @@
         {% endif %}
     </div>
 </div>
+
 <div class="author-poems">
     {% for item in poems_with_preview %}
         <div class="poem-card">

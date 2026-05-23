@@ -6,10 +6,10 @@ from poems.utils import get_poem_preview
 def author_list(request):
     selected_letter = request.GET.get('letter')
 
-    authors = Author.objects.filter(is_published=True).order_by('name')
+    authors = Author.objects.filter(is_published=True).order_by('last_name')
 
     if selected_letter:
-        authors = authors.filter(name__istartswith=selected_letter)
+        authors = authors.filter(last_name__istartswith=selected_letter)
 
     alphabet = list('АБВГДЕЖЗИКЛМНОПРСТЭЮЯ')
 
