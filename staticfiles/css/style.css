@@ -616,6 +616,7 @@ h1, h2 {
         align-items: center !important;
         gap: 18px !important;
         padding-top: 0 !important;
+        padding-left: 0 !important;
     }
 
     .nav a {
