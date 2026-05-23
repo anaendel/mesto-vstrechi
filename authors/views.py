@@ -11,7 +11,7 @@ def author_list(request):
     if selected_letter:
         authors = authors.filter(last_name__istartswith=selected_letter)
 
-    alphabet = list('АБВГДЕЖЗИКЛМНОПРСТЭЮЯ')
+    alphabet = list('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ')
 
     return render(
         request,

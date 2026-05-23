@@ -591,7 +591,7 @@ h1, h2 {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding: 26px 16px 10px !important;
+        padding: 26px 16px 20px !important;
         gap: 18px !important;
     }
 
@@ -603,8 +603,8 @@ h1, h2 {
     }
 
     .logo img {
-        width: 68px !important;
-        height: 68px !important;
+        width: 120px !important;
+        height: 120px !important;
     }
 
     .nav {
@@ -614,8 +614,8 @@ h1, h2 {
         flex-wrap: nowrap !important;
         justify-content: center !important;
         align-items: center !important;
-        gap: 18px !important;
-        padding-top: 0 !important;
+        gap: 25px !important;
+        padding-top: 20px !important;
         padding-left: 0 !important;
     }
 
@@ -717,30 +717,53 @@ h1, h2 {
         min-width: 76px !important;
     }
 
-    .author-name {
-        font-size: 34px !important;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .author-top, .author-info {
+    .author-top {
         display: flex !important;
         flex-direction: column !important;
-        gap: 28px !important;
-        margin-top: 25px !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 0 !important;
+        margin-top: 10px !important;
+        margin-bottom: 30px !important;
+        padding-left: 0 !important;
     }
 
-    .author-bio {
-        font-size: 16px;
-        line-height: 1.75;
+    .author-info {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 0 !important;
     }
 
     .author-photo {
-        width: 100%;
-        max-width: 260px;
-        margin: 0 auto;
+        width: 100% !important;
+        max-width: 260px !important;
+        margin: 0 auto 20px !important;
+        display: flex !important;
+        justify-content: center !important;
+        order: -1 !important;
     }
 
+    .author-detail-photo {
+        width: 150px !important;
+        height: 150px !important;
+        object-fit: cover !important;
+        border-radius: 50% !important;
+    }
+
+    .author-name {
+        font-size: 34px !important;
+        text-align: center !important;
+        margin: 0 0 20px !important;
+    }
+
+    .author-bio {
+        font-size: 16px !important;
+        line-height: 1.75 !important;
+        text-align: left !important;
+        width: 100% !important;
+    }
     .poem-page {
         width: 100% !important;
         max-width: 100% !important;
