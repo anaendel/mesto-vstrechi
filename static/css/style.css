@@ -804,17 +804,17 @@ h1, h2 {
     }
 
     .poem-author {
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
     }
 
     .poem-title {
-        font-size: 24px !important;
+        font-size: 18px !important;
         text-align: center;
     }
 
     .poem-text {
-        font-size: 17px !important;
+        font-size: 16px !important;
         line-height: 1.8;
         overflow-wrap: break-word;
     }
