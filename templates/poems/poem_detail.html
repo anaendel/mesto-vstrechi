@@ -6,7 +6,7 @@
 
     <div class="poem-header">
         <h2 class="poem-author">
-            {{ poem.author.name }}
+            <a href="{% url 'authors:author_detail' poem.author.slug %}">{{ poem.author.name }}</a>
         </h2>
 
 

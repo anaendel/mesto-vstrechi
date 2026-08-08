@@ -434,6 +434,11 @@ h1, h2 {
     margin-bottom: 12px;
 }
 
+.poem-author a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .poem-title {
     color: #262E79;
     font-size: 18px !important;
